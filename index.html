@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        .nav-wrapper {
+            border-radius: 100px;
+            padding-left: 2em;
+            padding-right: 2em;
+            background-image: url(img/paw-pattern\ 1.svg);
+        }
+        body {
+            background-color: white;
+            font-family: S;
+        }
+        .mobile-menu-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+            z-index: 50;
+        }
+        .menu-mobile {
+            border-radius: 50px;
+            margin-top: 2em;
+            margin-left: 1em;
+            margin-right: 1em;
+            background-image: url(img/paw-pattern\ 1.svg);
+        }
+
+        .wa-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        .card {
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      color: white;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    .card-overlay {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 16px;
+    }
+
+    .bg-dark {
+      background-image: url(img/bekasi-view-2.png);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .pb-16by9 {
+            padding-bottom: 56.25%;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    
+    </style>
+</head>
+<body class="font-['Barlow']">
+    <nav class="bg-white p-4 nav-wrapper shadow-md flex items-center justify-between mt-5 mx-5 fixed inset-x-5 z-10">
+        <a href="#home" class="flex items-center">
+            <img class="max-w-11 ml-5" src="img/logo-setu.jpg" alt="">
+            <span class="ml-2 text-xl font-bold"></span>
+        </a>
+        <ul class="hidden md:flex space-x-4 pr-5">
+            <li><a href="#about" class="text-blue-950 hover:text-green-800 font-bold">Tentang Kami</a></li>
+            <li><a href="#visi-misi" class="text-blue-950 hover:text-green-800 font-bold">Visi & Misi</a></li>
+            <li><a href="#wisata" class="text-blue-950 hover:text-green-800 font-bold">Tempat Wisata</a></li>
+            <li class="flex items-center space-x-2">
+                <a href="#pesan" class="text-blue-950 hover:text-green-800 font-bold">Pesan & saran</a>
+            </li>
+        </ul>
+        <button id="menu-btn" class="md:hidden focus:outline-none mr-5">
+            <img src="img/Hamburger.svg" alt="Open Menu" class="h-6 w-6 block">
+            <img src="img/menu-list-right.svg" alt="Close Menu" class="h-6 w-6 hidden">
+        </button>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu-wrapper" class="hidden">
+        <div id="mobile-menu" class="bg-white shadow-md p-4 menu-mobile fixed inset-x-5 mt-32 z-10">
+            <ul class="space-y-4 text-center">
+                <li><a href="#about" class="block text-blue-950 hover:text-green-800 text-lg font-bold">Tentang Kami</a></li>
+                <li><a href="#visi-misi" class="block text-blue-950 hover:text-green-800 text-lg font-bold">Visi & Misi</a></li>
+                <li><a href="#wisata" class="block text-blue-950 hover:text-green-800 text-lg font-bold">Tempat Wisata</a></li>
+                <li><a href="#pesan" class="block text-blue-950 hover:text-green-800 text-lg font-bold">Pesan & saran</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="bg-dark py-72" id="home">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+          <h2 class="text-6xl font-extrabold sm:text-4xl mb-4">Kecamatan Setu</h2>
+          <p class="text-lg mb-6">Kecamatan Setu di Kabupaten Bekasi, Jawa Barat, dikenal dengan lingkungannya yang asri dan berkembang. Daerah ini memiliki perumahan baru, fasilitas umum, serta Danau Setu sebagai tempat rekreasi.</p>
+          <a href="https://bekasikota.go.id/home" class="inline-block px-6 py-3 bg-[#02A9E8] text-white font-semibold rounded-full hover:bg-blue-700 transition">For More</a>
+        </div>
+      </section>
+
+      <section class="bg-blue py-64" id="about">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- Header -->
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Struktur Organisasi Bekasi</h2>
+            <p class="mt-4 text-lg text-gray-600">Team yang akan membuat Bekasi semakin maju</p>
+          </div>
+          
+          <!-- Team Cards -->
+          <div class="grid gap-8 sm:grid-cols-1 md:grid-cols-3">
+            <!-- Secretary Card -->
+            <div class="bg-[#02A9E8] p-6 rounded-lg shadow-lg">
+              <div class="flex items-center mb-4">
+                <img class="w-16 h-16 rounded-full" src="img/sekre.png" alt="Secretary">
+                <div class="ml-4">
+                  <h4 class="text-lg font-semibold text-white">Ali Amron</h4>
+                  <p class="text-sm text-white">Sekretaris</p>
+                </div>
+              </div>
+              <p class="text-white">Ali Amran dikenal sebagai seorang yang bijak dan teliti sehingga ia dipercaya untuk memegang jabatan sekretaris di Kecamatan Setu</p>
+            </div>
+            
+            <!-- CEO Card -->
+            <div class="bg-[#02A9E8] p-6 rounded-lg shadow-lg">
+              <div class="flex items-center mb-4">
+                <img class="w-16 h-16 rounded-full" src="img/pak-camat.png" alt="Camat">
+                <div class="ml-4">
+                  <h4 class="text-lg font-semibold text-white">Joko Dwijatmoko</h4>
+                  <p class="text-sm text-white">Camat</p>
+                </div>
+              </div>
+              <p class="text-white">Joko Dwijatmoko, seorang camat di Setu, dikenal dengan kepemimpinan tegas, berintegritas, dan fokus pada peningkatan kesejahteraan serta pembangunan wilayahnya, serta responsif terhadap permasalahan masyarakat.</p>
+            </div>
+            
+            <!-- Co-CEO Card -->
+            <div class="bg-[#02A9E8] p-6 rounded-lg shadow-lg">
+              <div class="flex items-center mb-4">
+                <img class="w-16 h-16 rounded-full" src="img/wa-camat.png" alt="Co-CEO">
+                <div class="ml-4">
+                  <h4 class="text-lg font-semibold text-white">Imam Santoso</h4>
+                  <p class="text-sm text-white">Wakil Camat</p>
+                </div>
+              </div>
+              <p class="text-white">Imam Santoso adalah seorang wakil camat yang berdedikasi tinggi dan berkomitmen untuk meningkatkan kesejahteraan masyarakat di wilayahnya.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-gray-100 pt-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- Header -->
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Data Setu</h2>
+            <p class="mt-4 text-lg text-gray-600">Berikut ini adalah beberapa data Kecamatan Setu</p>
+          </div>
+          
+          <!-- Cards Grid -->
+          <div class="grid gap-8 sm:grid-cols-1 md:grid-cols-3">
+            <!-- Card 1 -->
+            <div class="bg-[#ec3237] p-6 rounded-lg shadow-lg flex flex-col items-start">
+              <p class="text-sm text-white mb-2">Jumlah penduduk Kec. Setu</p>
+              <div class="flex items-center justify-between w-full">
+                <h3 class="text-2xl font-bold text-white mt-auto">151.475</h3>
+                <i style="color: azure;" class="bi bi-person-fill text-2xl"></i>
+              </div>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="bg-[#ec3237] p-6 rounded-lg shadow-lg flex flex-col items-start">
+              <p class="text-sm text-white mb-2">Jumlah pengunjung tiap tahun</p>
+              <div class="flex items-center justify-between w-full">
+                <h3 class="text-2xl font-bold text-white mt-auto">85.410</h3>
+                <i style="color: azure;" class="bi bi-person-walking text-2xl"></i>
+              </div>
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="bg-[#ec3237] p-6 rounded-lg shadow-lg flex flex-col items-start">
+              <p class="text-sm text-white mb-2">Angka kelahiran pertahun</p>
+              <div class="flex items-center justify-between w-full">
+                <h3 class="text-2xl font-bold text-white mt-auto">7.801</h3>
+                <i style="color: azure;" class="bi bi-person-plus-fill text-2xl"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-gray-100 py-12 pt-44" id="visi-misi">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- Card -->
+          <div class="bg-green-600 rounded-lg shadow-lg overflow-hidden flex flex-col-reverse md:flex-row">
+            <!-- Text Section -->
+            <div class="p-6 md:w-1/2">
+              <h2 class="text-2xl font-bold text-white mb-4">VISI</h2>
+              <p class="text-white mb-6">“Cerdas, Kreatif, Maju, Sejahtera dan Ihsan"</p>
+              
+              <h2 class="text-2xl font-bold text-white mb-4">MISI</h2>
+              <ul class="list-disc list-inside text-white space-y-2">
+                <li>Meningkatkan Kapasitas Tata Kelola Pemerintahan yang baik</li>
+                <li>Membangun, Meningkatkan dan Mengembangkan Prasarana dan Sarana Kota yang maju dan memadai</li>
+                <li>Meningkatkan perekonomian berbasis potensial jasa kreatif dan perdagangan yang berdaya saing</li>
+                <li>Meningkatkan dan mengembangkan Kualitas Kehidupan Masyarakat yang berpengetahuan, sehat, berakhlak mulia, kreatif dan inovatif</li>
+                <li>Membangun, meningkatkan dan mengembangkan kehidupan Kota yang aman dan cerdas, serta lingkungan hidup yang nyaman</li>
+              </ul>
+            </div>
+            
+            <!-- Image Section -->
+            <div class="md:w-1/2">
+              <img src="img/organisasi-setu.jpg" alt="Vision and Mission" class="w-full h-full object-cover">
+            </div>
+          </div>
+        </div>
+      </section>
+
+     
+
+      <section class="bg-white py-52" id="wisata">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- Header -->
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Tempat Wisata</h2>
+            <p class="mt-4 text-lg text-gray-600">Explorasi beberapa tempat wisata  di Kecamatan Setu</p>
+          </div>
+          
+          <!-- Cards Grid -->
+          <div class="grid gap-12 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+            <!-- Card 1 -->
+            <a href="https://www.instagram.com/gowet_grandwisata/?hl=en" class="card bg-cover rounded-lg hover:scale-110 transition-all hover:shadow-2xl" style="background-image: url('img/go-wet.png');">
+              <div class="card-overlay">
+                <h3 class="text-xl font-bold">Go-Wet</h3>
+              </div>
+            </a>
+            
+            <!-- Card 2 -->
+            <a href="https://maps.app.goo.gl/JBTqdxQ7wT9JEBTH9" class="card bg-cover rounded-lg hover:scale-110 transition-all hover:shadow-2xl" style="background-image: url('img/kampung-kita.jpeg');">
+              <div class="card-overlay">
+                <h3 class="text-xl font-bold">Kampoeng Kita</h3>
+              </div>
+            </a>
+            
+            <!-- Card 3 -->
+            <a href="https://maps.app.goo.gl/cCwExhteW6vodcES8" class="card bg-cover rounded-lg hover:scale-110 transition-all hover:shadow-2xl" style="background-image: url('img/edu-forest.jpeg');">
+              <div class="card-overlay">
+                <h3 class="text-xl font-bold">Edu Forest</h3>
+              </div>
+            </a>
+            
+            <!-- Card 4 -->
+            <a href="https://maps.app.goo.gl/dvpLWzycb7i5TZZ77" class="card bg-cover rounded-lg hover:scale-110 transition-all hover:shadow-2xl" style="background-image: url('img/3023884345.jpg');">
+              <div class="card-overlay">
+                <h3 class="text-xl font-bold">Curug Parigi</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-gray-100 py-20">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row items-center bg-white shadow-lg rounded-lg overflow-hidden">
+                <div class="md:w-1/2 p-6">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Kecamatan Setu</h2>
+                    <p class="text-gray-600">Dalam video ini, kami mengajak Anda untuk mengenal lebih dekat Kecamatan Setu di Kabupaten Bekasi, Jawa Barat. Kecamatan Setu menawarkan beragam keindahan alam seperti Danau Setu yang menenangkan, serta fasilitas modern termasuk sekolah, pusat kesehatan, dan pusat perbelanjaan yang memadai. Selain itu, Setu juga memiliki komunitas yang ramah dan budaya yang kaya, menjadikannya tempat yang ideal untuk dikunjungi dan ditinggali. Saksikan video ini untuk menikmati lebih banyak tentang pesona dan kehidupan di Kecamatan Setu.</p>
+                </div>
+                <div class="md:w-1/2 p-6 flex justify-center">
+                    <div class="bg-[#02A9E8] rounded-lg p-4">
+                      <iframe class="aspect-video w-96 md:w-72 lg:w-96" src="https://drive.google.com/file/d/1Y6VLO6ay5YDT0NWwtJdXKXkOGU_JpvNv/preview" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+      
+
+      <section class="py-40 bg-white" id="pesan">
+        <div class="max-w-xl mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- Suggestion Form Card -->
+          <div id="suggestion-form" class="bg-[#fff500] p-8 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-bold mb-6">Masukan saran anda</h2>
+            <form onsubmit="handleSubmit(event)">
+              <div class="mb-4">
+                <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Nama</label>
+                <input type="text" id="name" name="name" required class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+              </div>
+              <div class="mb-4">
+                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                <input type="email" id="email" name="email" required class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+              </div>
+              <div class="mb-6">
+                <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Saran</label>
+                <textarea id="message" name="message" rows="7" required class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+              </div>
+              <button type="submit" class="w-full px-4 py-2 bg-[#e97b1e] text-white font-semibold rounded-md hover:bg-orange-800 transition">Submit</button>
+            </form>
+          </div>
+          <!-- Thank You Message Card -->
+          <div id="thank-you-message" class="bg-[#fff500] p-8 rounded-lg shadow-lg hidden">
+            <h2 class="text-2xl font-bold mb-4">Terima Kasih</h2>
+            <p class="text-gray-700">Terima Kasih banyak atas saran anda</p>
+          </div>
+        </div>
+      </section>
+
+      <footer style="background-image: url(img/footer.jpg); background-repeat: no-repeat; background-size: cover;" class="bg-gray-800 text-gray-300 py-8 px-10">
+        <div class="container mx-auto flex flex-wrap justify-between items-center px-4">
+            <div><a href="#home">
+                <img class="max-w-28" src="img/logo-setu-trans.png" alt="logo-setu-footer"></a>
+            </div>
+          <!-- Contact Information -->
+          <div class="w-full md:w-1/3 mb-4 md:mb-0 flex flex-col gap-1">
+            <h3 class="text-lg font-semibold mb-2">Contact Us</h3>
+            <p>Email: <a class="hover:font-semibold" href="mailto:info@bekasikota.go.id">info@bekasikota.go.id</a></p>
+            <p>Phone: <a class="hover:font-semibold" href="#">(021) 88961767</a></p>
+            <p>Address: <a class="hover:font-semibold" href="https://maps.app.goo.gl/i4WJt8hWZLpdBM9z6">Jl. Jendral Ahmad Yani No. 1 Gd Perkantoran Lt Dasar, Bekasi</a></p>
+          </div>
+    
+          
+          <!-- Logo or additional links -->
+          <div class="w-full md:w-1/3 gap-10 justify-center flex mt-10">
+            <!-- You can add a logo or additional links here -->
+             <a href="https://www.instagram.com/pemkot_bekasi/">
+               <i class="bi bi-instagram text-2xl"></i>
+             </a>
+            <a href="https://www.tiktok.com/@bekasipmikota_">
+              <i class="bi bi-tiktok text-2xl"></i>
+            </a>
+            <a href="https://x.com/pemkotbekasi">
+              <i class="bi bi-twitter-x text-2xl"></i>
+            </a>
+          </div>
+        </div>
+        <hr class="mt-16 w-full">
+        <div class="container mx-auto w-full">
+          <p class="flex justify-center text-sm font-bold mt-7">2024 © • Lomba Classmeeting IT Sekolah Developer Indonesia • Dibuat oleh kelompok 4 • All images are either free stocks or generated by AI •</p>
+        </div>
+      </footer>
+    
+    
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenuWrapper = document.getElementById('mobile-menu-wrapper');
+        const hamburgerIcon = document.querySelector('#menu-btn img:nth-child(1)');
+        const closeIcon = document.querySelector('#menu-btn img:nth-child(2)');
+    
+        menuBtn.addEventListener('click', () => {
+            mobileMenuWrapper.classList.toggle('hidden');
+            hamburgerIcon.classList.toggle('hidden');
+            closeIcon.classList.toggle('hidden');
+        });
+
+        function handleSubmit(event) {
+      event.preventDefault();
+      document.getElementById('suggestion-form').classList.add('hidden');
+      document.getElementById('thank-you-message').classList.remove('hidden');
+    }
+    </script>
+    
+</body>
+</html>
